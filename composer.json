@@ -1,0 +1,37 @@
+{
+  "name": "tanchengjin/laravel-admin-google-authenticator",
+  "description": "this is google authenticator extension of laravel admin",
+  "type": "library",
+  "keywords": [
+    "laravel-admin",
+    "extension",
+    "laravel admin extension google authenticator"
+  ],
+  "homepage": "https://github.com/tanchengjin/laravel-admin-google-authenticator",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "TanChengjin",
+      "email": "18865477815@163.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "encore/laravel-admin": "~1.6",
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "tanchengjin\\LaravelAdmin\\Google\\GoogleAuthenticator\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "tanchengjin\\LaravelAdmin\\Google\\GoogleAuthenticator\\GoogleAuthenticatorServiceProvider"
+      ]
+    }
+  }
+}
